@@ -1,0 +1,101 @@
+﻿<html>
+	<head>
+		<title>Solicitar Pase</title>
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="cabecera">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" alt="Logo del festival"/></a>
+				</div>
+				<div id="tri"></div>
+				<div id="ciudades">
+					<a href="barcelona.html" class="linkciudad">Barcelona</a>
+					<a href="brujas.html" class="linkciudad">Brujas</a>
+					<a href="buenosaires.html" class="linkciudad">Buenos Aires</a>
+				</div>
+				<ul id="menu">
+						<li><a href="index.html">Inicio</a>
+						<li><a href="informacion.html">Información</a>
+							<ul>
+								<li><a href="ubicacion.html">Ubicacion</a></li>
+								<li><a href="nosotros.html">Nosotros</a></li>
+							</ul>
+						</li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="pases.html">Pases</a>
+							<ul>
+								<li><a href="tipospases.html">Tipos de pases</a></li>
+								<li><a href="solicitarpase.html">Solicitar pases</a></li>
+							</ul>
+						</li>
+						<li><a href="noticias.html">Noticias</a></li>
+					</ul>
+			</div>
+			<div id="contenido">
+				<div id="solicitud">
+					<h2 class="tituloFormulario">¡Solicita ya tu pase!</h2>
+					<form action="formulario.php" method="post">
+						<div id="datosPersonales">
+							<h3>Datos personales</h3>
+							<label for="nombre">Nombre</label>
+							<input id="nombre" type="text" name="nombre"/>
+							<br/>
+							<label for="apellidos">Apellidos</label>
+							<input id="apellidos" type="text" name="apellidos"/>
+							<br/>
+							<label for="email">Email</label>
+							<input id="email" type="email" name="email"/>
+							<br/>
+							<label for="pase">Tipo de pase</label>
+							<br/>
+							<input type="radio" name="pase" value="basico"><span>Pase básico</span>
+							<br>
+							<input type="radio" name="pase" value="estandar"><span>Pase estandar</span>
+							<br>
+							<input type="radio" name="pase" value="completo"><span>Pase completo</span>
+							<br/>
+							<label for="festival">Escoge un festival</label>
+							<br/>
+							<input type="radio" name="festival" value="barcelona"><span>Barcelona</span>
+							<br>
+							<input type="radio" name="festival" value="brujas"><span>Brujas</span>
+							<br>
+							<input type="radio" name="festival" value="buenos aires"><span>Buenos Aires</span>
+							<br/>
+						</div>
+						<div id="metodoPago">
+							<h3>Método de pago</h3>
+							<br/>
+							<input type="radio" name="pago" value="visa"><span>Tarjeta de credito</span>
+							<br>
+							<input type="radio" name="pago" value="american_express"><span>American Express</span>
+							<br/>
+							<input type="radio" name="pago" value="paypal"><span>PayPal</span>
+							<br>
+							<input type="radio" name="pago" value="transferencia"><span>Transferencia bancaria</span>
+							<br/>
+							<input type="radio" name="pago" value="trustly"><span>Trustly</span>
+							<br/>
+							<input type="radio" name="pago" value="bitcoin"><span>BitCoin</span>
+							<br/>
+						</div>
+						<button type="submit" class="boton">Solicitar pase</button>
+
+					</form>
+				</div>
+			</div>
+			<div id="pie">
+				<p>Siguenos en nuestras redes sociales:</p>
+				<a href="https://twitter.com/Primavera_Sound" target="_black"><img id="twitter" src="img/twitter.png" alt="Logo de twitter"/></a>
+				<a href="https://www.instagram.com/primavera_sound/" target="_black"><img id="instagram" src="img/instagram.png" alt="Logo de instagram"/></a>
+				<a href="https://www.pinterest.es/primaverasound/_saved/" target="_black"><img id="printerest" src="img/printerest.png" alt="Logo de printerest"/></a>
+				<hr/>
+			</div>
+		</div>
+		<a id="flecha" href="#contenedor"><img src="img/flecha.png" height="100px" width="100px" alt="Flecha apuntando hacia arriba"/></a>
+	</body>
+</html>
